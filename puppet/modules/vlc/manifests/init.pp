@@ -1,5 +1,5 @@
 class vlc {
-	file {"/usr/share/applications/defaults.list":
+	file {"/etc/gnome/defaults.list":
 		source => "/etc/puppet/modules/vlc/templates/defaults.list",
 	}
 
