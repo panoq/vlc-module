@@ -5,11 +5,7 @@ class vlc {
                 allowcdrom => 'true',
         }
 
-	file {"/home/xubuntu/.config/xfce4/xfconf/xfce-perchannel-xml/vlc.xml":
-		source => "/etc/puppet/modules/vlc/templates/vlc.xml",
+	file {"/etc/gnome/defaults.list":
+		source => "/etc/puppet/modules/vlc/templates/defaults.list",
 	}
-
-	tidy {"/home/xubuntu/.config/xfce4/xfconf/xfce-perchannel-xml/parole.xml":
-	}
-
 }
